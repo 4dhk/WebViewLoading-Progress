@@ -15,6 +15,7 @@
 		8E9DEAB51E276E5B001F72B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9DEAB41E276E5B001F72B7 /* UIKit.framework */; };
 		8E9DEAB71E276E65001F72B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9DEAB61E276E65001F72B7 /* Foundation.framework */; };
 		8E9DEAB91E276E6D001F72B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9DEAB81E276E6D001F72B7 /* CoreGraphics.framework */; };
+		8E9DEABF1E277C71001F72B7 /* LLLWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DEABE1E277C71001F72B7 /* LLLWebViewProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		8E9DEAB41E276E5B001F72B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8E9DEAB61E276E65001F72B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E9DEAB81E276E6D001F72B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E9DEABD1E277C71001F72B7 /* LLLWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLWebViewProgress.h; sourceTree = "<group>"; };
+		8E9DEABE1E277C71001F72B7 /* LLLWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLWebViewProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 		8E9DEA9B1E276DF0001F72B7 /* RayWebViewProgress */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DEABC1E277737001F72B7 /* WebViewProgress */,
 				8E9DEA9F1E276DF0001F72B7 /* AppDelegate.h */,
 				8E9DEAA01E276DF0001F72B7 /* AppDelegate.m */,
 				8E9DEAA21E276DF0001F72B7 /* ViewController.h */,
@@ -94,6 +98,15 @@
 				8E9DEAB41E276E5B001F72B7 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E9DEABC1E277737001F72B7 /* WebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				8E9DEABD1E277C71001F72B7 /* LLLWebViewProgress.h */,
+				8E9DEABE1E277C71001F72B7 /* LLLWebViewProgress.m */,
+			);
+			path = WebViewProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9DEAA41E276DF0001F72B7 /* ViewController.m in Sources */,
+				8E9DEABF1E277C71001F72B7 /* LLLWebViewProgress.m in Sources */,
 				8E9DEAA11E276DF0001F72B7 /* AppDelegate.m in Sources */,
 				8E9DEA9E1E276DF0001F72B7 /* main.m in Sources */,
 			);
