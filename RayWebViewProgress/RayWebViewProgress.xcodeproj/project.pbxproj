@@ -16,6 +16,7 @@
 		8E9DEAB71E276E65001F72B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9DEAB61E276E65001F72B7 /* Foundation.framework */; };
 		8E9DEAB91E276E6D001F72B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9DEAB81E276E6D001F72B7 /* CoreGraphics.framework */; };
 		8E9DEABF1E277C71001F72B7 /* LLLWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DEABE1E277C71001F72B7 /* LLLWebViewProgress.m */; };
+		8ED49AA91E2CCF5A00EA1C73 /* LLLWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED49AA81E2CCF5A00EA1C73 /* LLLWebViewProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		8E9DEAB81E276E6D001F72B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8E9DEABD1E277C71001F72B7 /* LLLWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLWebViewProgress.h; sourceTree = "<group>"; };
 		8E9DEABE1E277C71001F72B7 /* LLLWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLWebViewProgress.m; sourceTree = "<group>"; };
+		8ED49AA71E2CCF5A00EA1C73 /* LLLWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLWebViewProgressView.h; sourceTree = "<group>"; };
+		8ED49AA81E2CCF5A00EA1C73 /* LLLWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLWebViewProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 			children = (
 				8E9DEABD1E277C71001F72B7 /* LLLWebViewProgress.h */,
 				8E9DEABE1E277C71001F72B7 /* LLLWebViewProgress.m */,
+				8ED49AA71E2CCF5A00EA1C73 /* LLLWebViewProgressView.h */,
+				8ED49AA81E2CCF5A00EA1C73 /* LLLWebViewProgressView.m */,
 			);
 			path = WebViewProgress;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				8E9DEAA41E276DF0001F72B7 /* ViewController.m in Sources */,
 				8E9DEABF1E277C71001F72B7 /* LLLWebViewProgress.m in Sources */,
 				8E9DEAA11E276DF0001F72B7 /* AppDelegate.m in Sources */,
+				8ED49AA91E2CCF5A00EA1C73 /* LLLWebViewProgressView.m in Sources */,
 				8E9DEA9E1E276DF0001F72B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +337,7 @@
 				8E9DEAB21E276DF0001F72B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

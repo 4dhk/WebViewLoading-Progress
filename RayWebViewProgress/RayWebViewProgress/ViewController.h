@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+//1.导入头文件
+#import "LLLWebViewProgress.h"
+
+//2.实现相关协议
+@interface ViewController : UIViewController<UIWebViewDelegate,LLLWebViewProgressDelegate>
 
 
 @end
