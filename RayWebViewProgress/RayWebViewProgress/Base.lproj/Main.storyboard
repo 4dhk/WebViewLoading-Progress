@@ -16,16 +16,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" id="J8b-bQ-O3y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="0d8-dZ-fdN">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="we5-PQ-v5k"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="bei-Li-hJl"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="we5-PQ-v5k">
+                            <connections>
+                                <action selector="searchWihGoogle:" destination="BYZ-38-t0r" id="1An-QJ-BPr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="bei-Li-hJl">
+                            <connections>
+                                <action selector="refreshAction:" destination="BYZ-38-t0r" id="03D-Nu-DMt"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="_webView" destination="J8b-bQ-O3y" id="MiH-pA-FBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762.5" y="135.62333333333333"/>
+            <point key="canvasLocation" x="762.5" y="135.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6R7-oO-N2A">

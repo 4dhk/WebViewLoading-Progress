@@ -14,6 +14,5 @@
 //2.实现相关协议
 @interface ViewController : UIViewController<UIWebViewDelegate,LLLWebViewProgressDelegate>
 
-
 @end
 

@@ -58,12 +58,17 @@
         frame.size.width = progress * self.bounds.size.width;
         _progressBarView.frame = frame;
         
+        //显示小菊花
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+        
     } completion:nil];
     
     //加载完成后 进度条消失
     if (progress >= 1.0) {
         [UIView animateWithDuration:animated ? _fadeAnimationDuration : 0.0 delay:_fadeOutDelay options:UIViewAnimationOptionCurveEaseInOut animations:^{
             _progressBarView.alpha = 0.0;
+            //显示小菊花
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         } completion:^(BOOL completed){
             CGRect frame = _progressBarView.frame;
             frame.size.width = 0;
@@ -76,13 +81,5 @@
         } completion:nil];
     }
 }
-
-
-
-
-
-
-
-
 
 @end
