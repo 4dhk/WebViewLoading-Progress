@@ -20,10 +20,11 @@
     LLLWebViewProgress *_progressProxy;
 }
 
-//页面出现时 在导航上 加上自定义的ProgressView
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    //页面出现时 在导航上 加上自定义的ProgressView
     [self.navigationController.navigationBar addSubview:_progressView];
 }
 
@@ -36,7 +37,8 @@
 
 - (IBAction)searchWihGoogle:(id)sender {
     
-    [self searchBaidu];
+    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.google.com"]];
+    [_webView loadRequest:req];
 }
 
 - (IBAction)refreshAction:(id)sender {
@@ -53,12 +55,15 @@
     _progressProxy.webViewProxyDelegate = self;//设置webView的代理
     _progressProxy.progressDelegate = self;//实现progress的代理
     
-    //实现自定义的进度条View
+    
     CGFloat progressBarHeight = 2.0f;//设置
     CGRect navigationBarBounds = self.navigationController.navigationBar.bounds;
     CGRect barFrame = CGRectMake(0, navigationBarBounds.size.height - progressBarHeight, navigationBarBounds.size.width, progressBarHeight);
+    
+    //自定义的进度条
     _progressView = [[LLLWebViewProgressView alloc] initWithFrame:barFrame];
     _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    
     
     [self loadGoogle];
     
@@ -75,11 +80,6 @@
     [_webView loadRequest:req];
 }
 
--(void)searchBaidu
-{
-    NSURLRequest *req = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
-    [_webView loadRequest:req];
-}
 
 //实现progress的协议方法 并且设置title
 #pragma mark - LLLWebViewProgressDelegate

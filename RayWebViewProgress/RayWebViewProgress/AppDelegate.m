@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+{
+    int _a;
+}
 
 @end
 
@@ -17,6 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSArray * arry = [NSArray arrayWithObjects:@"1",@"2", nil];
+
+    [arry enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        _a = 1;
+    }];
+    
     return YES;
 }
 

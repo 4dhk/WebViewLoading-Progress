@@ -67,7 +67,7 @@
     if (progress >= 1.0) {
         [UIView animateWithDuration:animated ? _fadeAnimationDuration : 0.0 delay:_fadeOutDelay options:UIViewAnimationOptionCurveEaseInOut animations:^{
             _progressBarView.alpha = 0.0;
-            //显示小菊花
+            //隐藏小菊花
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         } completion:^(BOOL completed){
             CGRect frame = _progressBarView.frame;
